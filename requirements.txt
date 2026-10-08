@@ -2,10 +2,13 @@ numpy==2.2.6
 pandas==3.0.3
 pyarrow==19.0.0
 requests==2.32.3
-streamlit==1.42.0
+streamlit==1.65.0
 plotly==6.8.0
+catboost==1.2.8
+scikit-learn>=1.5,<2
 fastapi>=0.115,<1
 uvicorn[standard]>=0.34,<1
 
 # Test dependency
 pytest==9.0.1
+httpx>=0.28,<1

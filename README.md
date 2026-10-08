@@ -3,6 +3,13 @@
 Single-user local platform for NIFTY intraday research, live market signals,
 paper trading, monitoring and chronological validation.
 
+## Interface preview
+
+![NIFTY market workspace in disconnected mode](docs/images/market-workspace.png)
+
+Actual screenshot from a fresh public clone with no broker credentials or private
+datasets. It shows the disconnected market workspace, not a simulated live feed.
+
 ## Highlights
 
 - React and TypeScript trading workspace with a FastAPI backend.
@@ -87,3 +94,15 @@ streamlit run apps/research_ui/app.py
 The application is read-only with respect to broker orders. Model, feature,
 threshold and decision behavior are owned by `src/` and frozen artifacts, not
 by UI code or command wrappers.
+
+## Reproducibility and validation
+
+- A clean Python 3.12 install was checked after aligning Streamlit with pandas 3
+  and adding the CatBoost runtime dependency.
+- The frontend was built from `npm ci` with `npm run build`.
+- Public-clone API and risk smoke checks are automated in
+  [GitHub Actions](.github/workflows/portfolio-checks.yml).
+- See [validation notes](docs/PORTFOLIO_VALIDATION.md) for scope and limitations.
+
+This repository does not claim trading profitability or publish private account
+results. Data-dependent historical tests need the excluded local datasets.
