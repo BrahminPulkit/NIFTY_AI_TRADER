@@ -1,0 +1,36 @@
+{
+  "security_master_paths": ["data/raw/dhan_security_master.csv"],
+  "underlying_symbol": "NIFTY",
+  "exchange_id": "NSE",
+  "master_segment": "D",
+  "exchange_segment": "NSE_FNO",
+  "instrument": "FUTIDX",
+  "interval_minutes": 1,
+  "include_open_interest": true,
+  "timezone": "Asia/Kolkata",
+  "history_years": 5,
+  "contract_history_days": 180,
+  "chunk_days": 90,
+  "request_timeout_seconds": 30,
+  "max_retries": 5,
+  "retry_backoff_seconds": 2.0,
+  "rollover_trading_days": 3,
+  "session_start": "09:15",
+  "session_end_exclusive": "15:30",
+  "large_gap_percent": 0.02,
+  "credentials": {
+    "client_id_env": "DHAN_CLIENT_ID",
+    "access_token_env": "DHAN_ACCESS_TOKEN"
+  },
+  "paths": {
+    "chunk_directory": "data/raw/dhan_futures_chunks",
+    "manifest": "data/raw/dhan_futures_chunks/manifest.json",
+    "continuous_csv": "data/raw/nifty_futures_continuous_1min.csv",
+    "continuous_parquet": "data/raw/nifty_futures_continuous_1min.parquet",
+    "official_source_metadata": "data/raw/official_data_source.json",
+    "quality_report": "reports/data_quality/data_quality_report.md",
+    "rollover_report": "reports/data_quality/rollover_report.csv",
+    "missing_candles": "reports/data_quality/missing_candles.csv",
+    "request_log": "logs/dhan_data_downloader.log"
+  }
+}

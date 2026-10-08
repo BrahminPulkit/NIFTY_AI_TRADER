@@ -1,0 +1,88 @@
+{
+  "approved_probability_threshold": 0.9,
+  "catboost_parameters": {
+    "allow_writing_files": false,
+    "depth": 6,
+    "iterations": 200,
+    "learning_rate": 0.03,
+    "loss_function": "Logloss",
+    "random_seed": 42,
+    "thread_count": 4
+  },
+  "catboost_version": "1.2.10",
+  "dataset_sha256": "3b08ca3d9b4b263b699727ae5a83bcc78ca1dba96455de248c8d09279d864b45",
+  "dataset_version": "prediction_dataset_v1",
+  "decision_engine": "Frozen approved Decision Engine; external upstream gate",
+  "excluded_all_null_features": [
+    "index_vwap"
+  ],
+  "execution_rules": {
+    "exit_rule": "frozen 15-minute Strategy Decision research response",
+    "one_active_trade": true,
+    "order_execution": false,
+    "paper_only": true
+  },
+  "feature_count": 83,
+  "feature_version": "prediction_feature_representation_v1",
+  "git_hash": null,
+  "live_deployment_approved": false,
+  "model_version": "production_candidate_v1.0.0",
+  "performance_summary": {
+    "balanced_accuracy": 0.7694334145536863,
+    "brier_score": 0.1537820347459602,
+    "f1": 0.7382297551789078,
+    "log_loss": 0.4683731044865574,
+    "pr_auc": 0.8096564153793735,
+    "precision": 0.7294380349832527,
+    "recall": 0.7472359893252002,
+    "roc_auc": 0.8539127437935489
+  },
+  "performance_summary_source": "Step 20B leakage-free OOF predictions",
+  "positive_rate": 0.4402721444458982,
+  "positive_rows": 3365,
+  "preprocessing_version": "step20b_column_transformer_v1",
+  "production_readiness": {
+    "classification": "Research Ready",
+    "computational_efficiency_score_10": 10.0,
+    "decision_engine_evidence_gate": "FAIL_LT_30_TRADES",
+    "drift_resistance_score_15": 3.597223742367107,
+    "predictive_performance_score_25": 21.074307330159797,
+    "probability_stability_score_15": 14.523459978162162,
+    "production_readiness_score": 83.09499105068906,
+    "risk_metrics_score_15": 15.0,
+    "temporal_robustness_score_20": 18.9
+  },
+  "psi_summary": {
+    "median_feature_psi": 0.1900462709605482,
+    "probability_psi": 0.0079423336972973,
+    "source": "reports/final_production_readiness/final_v1_vs_v2_comparison.csv"
+  },
+  "python_version": "3.12.4",
+  "risk_filters": {
+    "assumed_premium_risk_pct": 0.2,
+    "brokerage_per_order": 20.0,
+    "exchange_rate_each_side": 0.0003553,
+    "fixed_notional": 50000.0,
+    "gst_rate": 0.18,
+    "initial_capital": 1000000.0,
+    "maximum_position_pct": 0.1,
+    "monte_carlo_simulations": 1000,
+    "position_sizing_mode": "fixed_risk",
+    "random_seed": 42,
+    "risk_per_trade_pct": 0.01,
+    "sebi_rate_each_side": 1e-06,
+    "slippage_bps_each_side": 2.0,
+    "stamp_duty_buy_rate": 3e-05,
+    "stt_sell_rate": 0.0015
+  },
+  "status": "PRODUCTION_CANDIDATE",
+  "target_definition": "ATM CALL premium reaches +5% within 15 minutes",
+  "target_source_sha256": "5ab81c6b257155817d6f21652ed20801c76c2957198eb11b474648253c899ac5",
+  "training_hash": "f2d6bbd0d56570bbb8957045141300a3af2a6711e2469ee43bd946602339e345",
+  "training_period": {
+    "end": "2026-07-22T13:11:00+05:30",
+    "start": "2021-07-26T10:36:00+05:30"
+  },
+  "training_rows": 7643,
+  "training_timestamp_utc": "2026-07-26T15:30:26.243311+00:00"
+}

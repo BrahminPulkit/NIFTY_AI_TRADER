@@ -1,0 +1,24 @@
+research:
+  name: institutional_hybrid_baseline
+  instrument: NIFTY
+  bar_minutes: 1
+  option_moneyness: ATM
+  horizon_minutes: [5, 15]
+strategy:
+  threshold: 65
+weights:
+  regime: 20
+  trend: 15
+  liquidity: 15
+  momentum: 15
+  breakout: 10
+  volume: 10
+  option_liquidity: 10
+  premium_expansion: 5
+backtest:
+  max_hold_bars: 15
+  target_pct: 0.08
+  stop_pct: 0.04
+  round_trip_cost_pct: 0.002
+  cooldown_bars: 2
+

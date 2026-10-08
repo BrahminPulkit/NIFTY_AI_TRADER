@@ -1,0 +1,19 @@
+{
+  "mode": "replay",
+  "threshold": 0.9,
+  "prediction_dataset": "data/prediction/prediction_dataset_v1.parquet",
+  "oof_predictions": "data/prediction/oof/oof_predictions_catboost.parquet",
+  "model_path": "models/frozen_catboost_v1.pkl",
+  "model_features_path": "models/frozen_catboost_v1_features.json",
+  "decision_state_path": "models/frozen_decision_engine_state.json",
+  "journal_path": "logs/paper_predictions/predictions.jsonl",
+  "dhan": {
+    "client_id_env": "DHAN_CLIENT_ID",
+    "access_token_env": "DHAN_ACCESS_TOKEN",
+    "markets": {
+      "NIFTY": null,
+      "BANKNIFTY": null,
+      "SENSEX": null
+    }
+  }
+}

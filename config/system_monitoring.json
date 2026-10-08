@@ -1,0 +1,10 @@
+{
+  "stale_after_minutes": 5,
+  "latency_warning_ms": 1000.0,
+  "psi_warning": 0.20,
+  "minimum_drift_observations": 20,
+  "skipped_trade_warning_rate": 0.95,
+  "auto_refresh_seconds": 30,
+  "environment": "PRODUCTION_CANDIDATE",
+  "system_mode": "PAPER_TRADING"
+}

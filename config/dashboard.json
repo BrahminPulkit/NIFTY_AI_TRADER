@@ -1,0 +1,13 @@
+{
+  "product_name": "QuantEdge AI",
+  "subtitle": "Institutional AI Trading Platform",
+  "tagline": "Professional AI Research • Live Intelligence • Institutional Analytics",
+  "frontend_version": "2.0.0",
+  "mode": "RESEARCH_ONLY",
+  "default_dataset": "V1",
+  "recommended_dataset": "Production Dataset V1",
+  "readiness": "Research Ready",
+  "live_data_enabled": false,
+  "order_execution_enabled": false,
+  "theme": "quantedge_terminal_v2"
+}

@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "data\\prediction\\prediction_dataset_v1.parquet": "3b08ca3d9b4b263b699727ae5a83bcc78ca1dba96455de248c8d09279d864b45",
+    "reports\\final_production_readiness\\final_metadata.json": "661d947630ba7115f4bbc1d8a29065157a0d319baf529dc3364fd1defe018f51",
+    "reports\\final_production_readiness\\final_v1_vs_v2_comparison.csv": "fafb05305922ba264b2799b80050d470365eabe0f65de6618a014e3f12f83fe0",
+    "reports\\final_production_readiness\\production_readiness_score.csv": "8b1c8ddc161c72e3ba5802374d0413b59f15db172b3359f751cb83290974f759",
+    "reports\\model_benchmark\\benchmark_summary.csv": "5d8c1433c2a2434640cdd75e4376844d9fb6560d0fb8c3a8a16f6fcb704befa8",
+    "reports\\model_benchmark\\metadata.json": "e94b236fc7fe843838fe52950340bea0fe6a3f8606ac42c7cd9be134c30c735a",
+    "reports\\strategy_decision\\decision_matrix.csv": "5ab81c6b257155817d6f21652ed20801c76c2957198eb11b474648253c899ac5",
+    "reports\\walk_forward_paper_trading\\metadata.json": "41a26432cb928079615ae208ece709a7f3fde7554a850a25ca548986530beece"
+  },
+  "outputs": {
+    "feature_contract.json": "4bc3faaee6656a1b515f2024ae64d5386c3dc685aee599fec8bcbb1cd1782c6b",
+    "model.cbm": "464ea0d111ff73db8eb9624ebd9231b622342cd6d62406504c945bf9a7217a8b",
+    "model_validation_report.md": "4d292404fbf5219460a3627020b67fcb9abe29a5f96673ce11a8519b92b23ca9",
+    "preprocessor.joblib": "698d5417fbf809315cb233f382086a27adb7733b8b18a46e602bb721347f1aab",
+    "production_metadata.json": "0fa6bfe4bbb3a35dc2c7d46b32e18de173602aa511a4f75ae69e3f15c6cde313",
+    "production_predictor.py": "474b10a61654bb6ef4a2325e1deab2ff51e0f6d105d96dee76dabb0f6f589d97",
+    "version_manifest.json": "d7648a0d06db96fc71892180fef76d12ea1887b588b2cdf53e97cadaa418df3c"
+  },
+  "training_hash": "f2d6bbd0d56570bbb8957045141300a3af2a6711e2469ee43bd946602339e345"
+}

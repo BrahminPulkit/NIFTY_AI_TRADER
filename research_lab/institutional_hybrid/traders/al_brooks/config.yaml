@@ -1,0 +1,5 @@
+methodology: al_brooks
+version: fixed_v1
+entry: trend_bar_after_pullback_bar
+reject_regimes: [sideways, compression]
+optimisation: prohibited

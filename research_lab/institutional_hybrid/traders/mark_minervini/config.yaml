@@ -1,0 +1,5 @@
+methodology: mark_minervini
+version: fixed_intraday_v1
+entry: compression_breakout_with_volume
+relative_volume_min: 1.5
+optimisation: prohibited

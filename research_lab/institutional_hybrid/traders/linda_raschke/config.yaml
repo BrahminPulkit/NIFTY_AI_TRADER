@@ -1,0 +1,5 @@
+methodology: linda_raschke
+version: fixed_v1
+entry: ema_pullback_continuation
+regimes: [bull_trend, bear_trend, expansion]
+optimisation: prohibited

@@ -1,0 +1,20 @@
+{
+  "policy_version": "nifty_weekly_current_atm_v1",
+  "underlying": "NIFTY",
+  "underlying_security_id": 13,
+  "exchange_segment": "NSE_FNO",
+  "instrument": "OPTIDX",
+  "interval_minutes": 1,
+  "expiry_flag": "WEEK",
+  "expiry_code": 0,
+  "strike": "ATM",
+  "option_types": ["CALL", "PUT"],
+  "required_data": ["open", "high", "low", "close", "volume", "strike", "spot", "oi", "iv"],
+  "maximum_chunk_days": 30,
+  "contract_identity_required": ["timestamp", "underlying", "expiry", "strike", "option_type", "security_id"],
+  "allow_current_master_for_expired_contracts": false,
+  "allow_forward_fill": false,
+  "allow_synthetic_identity": false,
+  "training_enabled": false,
+  "broker_orders_enabled": false
+}

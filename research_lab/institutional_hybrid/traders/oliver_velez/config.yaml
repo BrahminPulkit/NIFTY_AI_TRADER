@@ -1,0 +1,5 @@
+methodology: oliver_velez
+version: fixed_v1
+entry: trend_continuation_with_volume
+relative_volume_min: 1.5
+optimisation: prohibited

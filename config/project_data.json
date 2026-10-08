@@ -1,0 +1,7 @@
+{
+  "project_phase": "fresh_five_year_development",
+  "dataset_status": "raw_validation_pending",
+  "five_year_index_raw_dataset": "data/raw/nifty_50_5years_1min.csv",
+  "dhan_security_master": "data/raw/dhan_security_master.csv",
+  "reset_backup_directory": "backup/project_reset_before_5year"
+}

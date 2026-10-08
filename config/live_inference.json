@@ -1,0 +1,17 @@
+{
+  "mode": "replay",
+  "production_model": "production_model",
+  "replay_source": "data/prediction/prediction_dataset_v1.parquet",
+  "journal_path": "logs/live_inference/predictions.jsonl",
+  "health_path": "logs/live_inference/pipeline_health.json",
+  "decision_observations": "data/runtime/decision_observations.parquet",
+  "approved_threshold": 0.9,
+  "dhan": {
+    "client_id_env": "DHAN_CLIENT_ID",
+    "access_token_env": "DHAN_ACCESS_TOKEN",
+    "from_date": "2026-07-01 09:15:00",
+    "to_date": null,
+    "index": null,
+    "option": null
+  }
+}

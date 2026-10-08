@@ -1,0 +1,20 @@
+.signal-strip {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr .6fr 1.5fr;
+  gap: 18px;
+  align-items: center;
+  min-height: 68px;
+  margin-bottom: 14px;
+  padding: 12px 18px;
+  border: 1px solid rgba(245, 176, 65, .24);
+  border-radius: 8px;
+  background: rgba(245, 176, 65, .06);
+}
+.signal-strip.trade { border-color: rgba(46, 204, 113, .32); background: rgba(46, 204, 113, .07); }
+.signal-strip > div:first-child { display: grid; grid-template-columns: 22px 1fr; align-items: center; column-gap: 8px; }
+.signal-strip svg { width: 18px; color: var(--amber); grid-row: 1 / 3; }
+.signal-strip.trade svg { color: var(--green); }
+.signal-strip span,.signal-strip small { display: block; color: var(--muted); font-size: 9px; }
+.signal-strip strong { font: 700 17px Manrope,Inter,system-ui,sans-serif; }
+.signal-strip b { display: block; margin-top: 5px; font-size: 11px; font-weight: 600; }
+@media(max-width:760px){.signal-strip{grid-template-columns:1fr 1fr}.signal-strip>div:last-child{grid-column:1/-1}}

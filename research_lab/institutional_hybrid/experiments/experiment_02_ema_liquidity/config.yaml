@@ -1,0 +1,5 @@
+experiment_id: experiment_02_ema_liquidity
+phase: 1
+filters: [ema_pullback, liquidity]
+common_rules_file: ../common.yaml
+common_rules_sha256: 51c3d67acab540df60676ddaea04f61ad7c6c667e4229af30a3079cd696ffa05

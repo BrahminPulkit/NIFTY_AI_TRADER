@@ -1,0 +1,15 @@
+{
+  "approved_threshold": 0.9,
+  "artifacts": [
+    "model.cbm",
+    "preprocessor.joblib",
+    "feature_contract.json",
+    "production_metadata.json",
+    "model_hashes.json"
+  ],
+  "created_utc": "2026-07-26T15:30:26.243311+00:00",
+  "deployment_status": "PAPER_INFERENCE_CANDIDATE_ONLY",
+  "entrypoint": "production_predictor.py:ProductionPredictor",
+  "immutable": true,
+  "package_version": "production_candidate_v1.0.0"
+}

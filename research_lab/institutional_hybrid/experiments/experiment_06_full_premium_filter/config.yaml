@@ -1,0 +1,5 @@
+experiment_id: experiment_06_full_premium_filter
+phase: 1
+filters: [ema_pullback, momentum, liquidity, volume, premium_expansion]
+common_rules_file: ../common.yaml
+common_rules_sha256: 51c3d67acab540df60676ddaea04f61ad7c6c667e4229af30a3079cd696ffa05

@@ -1,0 +1,24 @@
+mode: index_only_signal_research
+source: E:\NIFTY_AI_TRADER\data\raw\nifty_50_5years_1min.csv
+timezone: Asia/Kolkata
+session: {start: "09:15", end: "15:29"}
+signal_timing: bar_close
+entry_timing: next_bar_open
+execution:
+  stop_pct: 0.003
+  target_pct: 0.006
+  max_hold_bars: 15
+  round_trip_cost_pct: 0.0002
+  slippage_each_side_pct: 0.0001
+  ambiguous_intrabar_policy: stop_first
+integrity:
+  corrupted_row_policy: quarantine
+  maximum_corrupt_pct: 0.01
+  duplicate_tolerance: 0
+  synthetic_fill: prohibited
+  overnight_positions: prohibited
+  future_data: prohibited
+ranking:
+  primary: expectancy
+  minimum_trades_for_candidate: 30
+

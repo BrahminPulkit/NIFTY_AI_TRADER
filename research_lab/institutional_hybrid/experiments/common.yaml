@@ -1,0 +1,25 @@
+phase: 1
+dataset:
+  adapter: ProductionV1ReadOnlyAdapter
+  source: data/prediction/prediction_dataset_v1.parquet
+  access: read_only
+  dataset_id: prediction_dataset_v1
+timeframe:
+  bar_minutes: 1
+  horizon_minutes: [5, 15]
+session:
+  timezone: Asia/Kolkata
+  trading_start: "09:20"
+  trading_end: "15:15"
+risk:
+  stop_pct: 0.04
+  target_pct: 0.08
+  max_hold_bars: 15
+  cooldown_bars: 2
+costs:
+  round_trip_cost_pct: 0.002
+signal:
+  premium_expansion_threshold: 65
+  relative_volume_threshold: 1.5
+  momentum_atr_threshold: 1.1
+  momentum_range_threshold: 1.2

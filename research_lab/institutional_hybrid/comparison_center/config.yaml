@@ -1,0 +1,4 @@
+ranking_primary: expectancy
+tie_breaker: profit_factor
+optimisation: prohibited
+dataset_policy: identical_in_memory_frame

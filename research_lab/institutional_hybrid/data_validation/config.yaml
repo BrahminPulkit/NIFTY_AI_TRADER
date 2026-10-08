@@ -1,0 +1,43 @@
+version: phase2_precheck_v1
+contract: timestamped_index_plus_full_option
+timezone: Asia/Kolkata
+session:
+  start: "09:15"
+  end: "15:29"
+  expected_minutes: 375
+alignment:
+  mode: exact
+  backward_tolerance_seconds: 0
+datasets:
+  index:
+    path: E:\NIFTY_AI_TRADER\data\raw\nifty_50_5years_1min.csv
+    timestamp: timestamp
+    timestamp_format: unix_seconds
+    required: [timestamp, open, high, low, close]
+  option_ohlcv_oi:
+    enabled: false
+    exclusion_reason: timestamp column absent; superseded by timestamped full-option dataset
+    path: E:\NIFTY_AI_TRADER\data\raw\nifty_5years_rolling_calls.csv
+    timestamp: timestamp
+    timestamp_format: auto
+    required: [timestamp, open, high, low, close, volume, oi]
+  option_full:
+    enabled: true
+    path: E:\NIFTY_AI_TRADER\notebooks\nifty_rolling_options_all_columns_5yr.csv
+    timestamp: timestamp
+    timestamp_format: auto
+    required: [timestamp, open, high, low, close, volume, oi, iv, strike, spot]
+quality:
+  pass_minimum: 90
+  warning_minimum: 75
+  maximum_missing_candle_pct: 1
+  minimum_alignment_pct: 99
+  maximum_duplicate_pct: 0
+  maximum_corrupt_pct: 0
+  maximum_nan_required_pct: 0
+  spot_index_correlation_minimum: 0.99
+  maximum_atm_distance_points: 100
+  iv_units: percentage_points
+  iv_min_exclusive: 0
+  iv_max_inclusive: 200
+gate_file: outputs/research_data_gate.json

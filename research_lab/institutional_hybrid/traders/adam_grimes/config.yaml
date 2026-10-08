@@ -1,0 +1,5 @@
+methodology: adam_grimes
+version: fixed_v1
+entry: pullback_with_momentum
+momentum_3_atr_min: 1.0
+optimisation: prohibited

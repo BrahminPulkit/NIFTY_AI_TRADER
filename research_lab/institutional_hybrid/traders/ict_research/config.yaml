@@ -1,0 +1,4 @@
+methodology: ict_research
+version: restricted_v1
+allowed_concepts: [liquidity_sweep, market_structure_shift]
+optimisation: prohibited

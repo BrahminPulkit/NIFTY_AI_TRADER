@@ -1,0 +1,7 @@
+optimisation: prohibited
+execution_assumptions: traders.core.FixedExecution
+hybrids:
+  hybrid_v1: {entry: linda_raschke, filter: oliver_velez, exit: al_brooks}
+  hybrid_v2: {entry: al_brooks, filter: linda_raschke, exit: adam_grimes}
+  hybrid_v3: {entry: mark_minervini, filter: oliver_velez, exit: linda_raschke}
+  hybrid_v4: {entry: ict_research, filter: adam_grimes, exit: al_brooks}

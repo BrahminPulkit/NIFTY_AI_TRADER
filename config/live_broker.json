@@ -1,0 +1,13 @@
+{
+  "security_master": "data/raw/dhan_security_master_latest.csv",
+  "connection_timeout_seconds": 20,
+  "automatic_reconnect_attempts": 3,
+  "heartbeat_seconds": 30,
+  "candle_interval_minutes": 1,
+  "completed_candles_only": true,
+  "approved_threshold": 0.90,
+  "credential_storage": "PROCESS_MEMORY_SINGLETON",
+  "shared_cache": true,
+  "single_background_worker": true,
+  "encrypted_local_storage": false
+}

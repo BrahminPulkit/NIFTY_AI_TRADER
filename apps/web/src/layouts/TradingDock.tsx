@@ -1,0 +1,3 @@
+import { BookOpen, BriefcaseBusiness, ListOrdered } from "lucide-react";
+import { useState } from "react";
+export function TradingDock(){const[open,setOpen]=useState(false);return <section className={`trading-dock ${open?"open":""}`}><button onClick={()=>setOpen(!open)}><BriefcaseBusiness/>Positions <b>0</b></button><button onClick={()=>setOpen(!open)}><ListOrdered/>Orders <b>0</b></button><button onClick={()=>setOpen(!open)}><BookOpen/>Journal</button>{open&&<div className="dock-content"><strong>No open paper position</strong><span>An approved signal with a verified contract will appear here.</span></div>}</section>}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nifty-ai-trader"
+version = "0.1.0"
+description = "Single-user NIFTY AI research, live-signal and paper-trading platform"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.2.6",
+  "pandas==3.0.3",
+  "pyarrow==19.0.0",
+  "requests==2.32.3",
+  "streamlit==1.42.0",
+  "plotly==6.8.0",
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.34,<1",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.1"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "apps*", "commands*"]
+exclude = ["backup*", "data*", "reports*", "research_lab*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
